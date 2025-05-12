@@ -1,26 +1,12 @@
 import { useMemo } from 'react';
 
-function Header ({cart, removeFromCart, increaseQuantity, decreaseQuantity, maxItems, minItems, clearCart}) {
+function Header ({cart, removeFromCart, increaseQuantity, decreaseQuantity, maxItems, minItems, clearCart, isCartEmpty, cartTotal, totalItems}) {
 
     const logoUrl = "/img/logo.svg";
     const cartIconUrl = "/img/carrito.png"
 
     // Derived State
     // const isCartEmpty = cart.length === 0;
-
-    // If using braces {} for the useMemo function, use return.
-    const isCartEmpty = useMemo(() => {
-        return cart.length === 0;
-    }, [cart]);
-
-    // Otherwise, omit braces and doesn't need the return.
-    const cartTotal = useMemo(() => 
-        cart.reduce((total, item) => total + (item.quantity * item.price), 0), 
-    [cart])
-
-    const totalItems = useMemo(() => 
-        cart.reduce((total, item) => total + (item.quantity), 0), 
-    [cart])
     
     return (
         <>
