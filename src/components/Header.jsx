@@ -42,16 +42,16 @@ function Header ({cart, removeFromCart, increaseQuantity, decreaseQuantity, maxI
                                 <div id="carrito" className="bg-white p-3">
                                     {isCartEmpty ? 
                                     (
-                                        <p className="text-center">El carrito esta vacio</p>
+                                        <p className="text-center">Cart is empty</p>
                                     ) : (
                                         <>                                    
                                             <table className="w-100 table">
                                                 <thead>
                                                     <tr>
-                                                        <th>Imagen</th>
-                                                        <th>Nombre</th>
-                                                        <th>Precio</th>
-                                                        <th>Cantidad</th>
+                                                        <th>Image</th>
+                                                        <th>Model</th>
+                                                        <th>Price</th>
+                                                        <th>Quantity</th>
                                                         <th></th>
                                                     </tr>
                                                 </thead>
@@ -97,10 +97,10 @@ function Header ({cart, removeFromCart, increaseQuantity, decreaseQuantity, maxI
                                                     ))}
                                                 </tbody>
                                             </table>
-                                            <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal}</span></p>
+                                            <p className="text-end">Total: <span className="fw-bold">${cartTotal}</span></p>
                                         </>
                                     )}
-                                    <button className="btn btn-dark w-100 mt-3 p-2" onClick={clearCart}>Vaciar Carrito</button>
+                                    <button className="btn btn-dark w-100 mt-3 p-2" onClick={clearCart}>Empty cart</button>
                                 </div>
                             </div>
                         </nav>
