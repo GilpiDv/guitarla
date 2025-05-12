@@ -13,7 +13,7 @@
   max-width: 2rem;
   position: relative;
   z-index: 100;
-  
+  text-align: center;  
 }
 
 .carrito #carrito {
@@ -776,4 +776,11 @@ button:not(:disabled),
     animation-name: animarImagen;
     z-index: 10;
   }
+}
+
+.cart-elements {
+  color: white;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
 }
