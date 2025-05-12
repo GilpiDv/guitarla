@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 
 function Header ({cart, removeFromCart, increaseQuantity, decreaseQuantity, maxItems, minItems, clearCart}) {
 
-    const logoUrl = "./public/img/logo.svg";
-    const cartIconUrl = "./public/img/carrito.png"
+    const logoUrl = "/img/logo.svg";
+    const cartIconUrl = "/img/carrito.png"
 
     // Derived State
     // const isCartEmpty = cart.length === 0;
